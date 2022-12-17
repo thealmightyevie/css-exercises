@@ -32,16 +32,12 @@ body {
   height: 100%;
 }
 
-.cards {
-  display: flex;
-}
-
 .sidebar {
   width: 300px;
   background: royalblue;
   padding: 16px;
   display: flex;
-  flex: 1 0 15%;
+  flex-shrink: 0;
 }
 
 a {
@@ -55,10 +51,17 @@ ul {
   list-style: none;
 }
 
+.cards {
+  display: flex;
+  padding: 32px;
+  flex-wrap: wrap;
+}
+
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  padding: 32px;
-  flex: 2;
+  margin: 16px;
+  padding: 16px;
+  width: 28%;
 }
